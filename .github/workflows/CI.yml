@@ -8,8 +8,8 @@ jobs:
     - name : checkout repository code
       uses : actions/checkout@v3
     - uses: actions/setup-node@v3
-        with:
-          node-version: 16
+      with:
+        node-version: 16
     - name : install repository
       run : |
         npm ci
