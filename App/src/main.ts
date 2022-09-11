@@ -19,7 +19,7 @@ async function main() {
     var creditCard = line.value;
     
     creditCard = creditCard.replace(/\s/g, '');
-    
+     
     var creditCardResponse: CreditCardResponse = InputVerification.VerifyInput(creditCard);
     
     if(creditCardResponse.creditCardStatus == CreditCardStatusEnum.Valid) {
