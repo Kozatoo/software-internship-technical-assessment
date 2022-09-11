@@ -1,4 +1,7 @@
-class InputVerification {
+import { CreditCardResponse } from "../Models/CreditCardResponse.Model";
+import { MessagesEnum } from "../Enumerables/Messages.enum";
+import { CreditCardStatusEnum } from "../Enumerables/CreditCardStatus.enum";
+export class InputVerification {
     static  VerifyInput(input : string): CreditCardResponse{
         var response: CreditCardResponse = new CreditCardResponse();
 

@@ -1,3 +1,9 @@
+import { CreditCardResponse } from "../Models/CreditCardResponse.Model";
+import { MessagesEnum } from "../Enumerables/Messages.enum";
+import { CreditCardStatusEnum } from "../Enumerables/CreditCardStatus.enum";
+import { InputVerification } from "./InputVerification";
+import { CreditCardVerification } from "./CreditCardVerification";
+
 var readline = require('readline');
 
 var line = readline.createInterface({
@@ -13,6 +19,8 @@ line.question("Insert your credit card's number: ", function(creditCard) {
     }
 
     console.log(creditCardResponse.message)
-    readline.close();
-    process.exit(creditCardResponse.creditCardStatus)
+    
+  
+    line.close();
+    process.exit(1)
   });

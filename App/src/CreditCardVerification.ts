@@ -1,4 +1,7 @@
-class CreditCardVerification {
+import { CreditCardResponse } from "../Models/CreditCardResponse.Model";
+import { MessagesEnum } from "../Enumerables/Messages.enum";
+import { CreditCardStatusEnum } from "../Enumerables/CreditCardStatus.enum";
+export class CreditCardVerification {
     static LuhnValidation(input : string): CreditCardResponse  {
         var response: CreditCardResponse = new CreditCardResponse();
 

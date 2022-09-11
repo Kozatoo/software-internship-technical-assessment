@@ -1,4 +1,6 @@
-class CreditCardResponse {
+import { CreditCardStatusEnum } from "../Enumerables/CreditCardStatus.enum";
+import { MessagesEnum } from "../Enumerables/Messages.enum";
+export class CreditCardResponse {
     public creditCardStatus: CreditCardStatusEnum ;
     public message: MessagesEnum;
     
