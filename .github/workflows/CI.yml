@@ -12,5 +12,5 @@ jobs:
         node-version: 16
     - name : install repository
       run : |
-        npm ci
+        npm i
         node tests "ts-node App/src/main.ts"
